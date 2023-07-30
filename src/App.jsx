@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Routes>
-    <Route path="/onboarding" element={<RedirectOnboarding />} />
+    <Route path="/" element={<RedirectOnboarding />} />
     <Route path="/payment" element={<RedirectPayment/>}/>
 
    </Routes>
