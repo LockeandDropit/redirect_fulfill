@@ -1,23 +1,20 @@
 import { useState } from 'react'
+import { Route, Routes} from "react-router-dom"
 
 import './App.css'
+import RedirectOnboarding from './pages/RedirectOnboarding'
+import RedirectPayment from './pages/RedirectPayment'
 
 function App() {
 
 
 
   return (
-    <>
-      
-      <h1>You're all set!</h1>
-      <div className="card">
-      <a href="fulfill://OnboardingComplete">
-          Back to app
-        </a>
-        
-      </div>
-     
-    </>
+    <Routes>
+    <Route path="/onboarding" element={<RedirectOnboarding />} />
+    <Route path="/payment" element={<RedirectPayment/>}/>
+
+   </Routes>
   )
 }
 
